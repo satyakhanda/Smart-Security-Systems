@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Security Footage Clip",
+    "description": "A clip in the security footage",
+    "type": "object",
+    "properties": {
+        "timeStamp": {
+            "description": "The time stamp at which the clip is in",
+            "type": "number"
+        },
+        "cameraID": {
+            "description": "The camera that the footage came from",
+            "type": "number"
+        },
+        "googleVision": {
+            "description": "Data on the clip coming from the Google Vision API",
+            "type": "object"
+        },
+        "searchTags": {
+            "description": "Tags to do the search by",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    },
+    "required": ["timeStamp", "cameraID"]
+  }
