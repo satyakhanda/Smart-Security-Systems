@@ -4,6 +4,10 @@
     "description": "A clip in the security footage",
     "type": "object",
     "properties": {
+        "clipDetail": {
+            "description": "A small condensed description of where the clip came from",
+            "type": "string"
+        },
         "timeStamp": {
             "description": "The time stamp at which the clip is in",
             "type": "number"
@@ -26,5 +30,5 @@
             "uniqueItems": true
         }
     },
-    "required": ["timeStamp", "cameraID"]
+    "required": ["clipDetail", "timeStamp", "cameraID"]
   }
