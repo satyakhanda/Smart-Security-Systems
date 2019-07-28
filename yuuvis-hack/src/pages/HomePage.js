@@ -15,12 +15,16 @@ const AppStyle = {
 
 export default class HomePage extends Component {
 
-    state = {
-        showResults: true
-    };
+    constructor(props){
+        super(props);
+        this.state = {
+            showResults: true
+        };
+        this.onClick = this.onClick.bind(this);
+      }
 
     onClick() {
-        this.setState({ showResults: !showResults });
+        this.setState({ showResults: !this.state.showResults })
     }
 
     render() {
@@ -33,7 +37,7 @@ export default class HomePage extends Component {
                         <br></br>
                         <img src={favicon} className="App-logo" alt="logo" />
                         <br></br>
-                        <input type="submit" value="Search" onClick={this.onClick} />
+                        <input type="submit" value="Toggle" onClick={this.onClick} />
                         {this.state.showResults ?
                             <div>
                                 <a type="button" href="/about" class="btn btn-secondary btn-lg" style={butStyle}>Learn More</a>

@@ -1,7 +1,12 @@
 import React from 'react';
 import NavigationBar from '../components/NavigationBar';
 
-
+const butStyle = {
+    margin: '20px',
+    width: '200px',
+    background: '#D3D3D3',
+    color: 'black',
+};
 
 const CreateProfile = () => 
 <div>
@@ -43,7 +48,7 @@ const CreateProfile = () =>
                 <label for="Profile">Short Bio</label>
                 <textarea class="form-control" placeholder="I am a business owner who..." rows="3"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Create your profile</button>
+            <a type="button" href="/signIn" class="btn btn-success mb-2" style={butStyle}>Create your profile!</a>
         </form>
     </div> 
     </div>

@@ -60,7 +60,7 @@ class Landing extends Component {
                 <div className="text-center">
                   <button name="button" className="btn btn-lg bggreen text-white p-2 hvr-grow-shadow mt-2 border-dark" onClick={this.onSubmit} type="submit">
 
-                    <b><Link className="text-white" to="/logIn">Sign In</Link></b>
+                    <b><Link className="text-white" to="/search">Sign In</Link></b>
 
                   </button>
                 </div>

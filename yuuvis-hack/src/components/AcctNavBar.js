@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 import favicon from '../favicon.svg';
 import '../App.css';
 
-export default function NavigationBar() {
+export default function AcctNavBar() {
 
     return (
 
@@ -20,7 +20,7 @@ export default function NavigationBar() {
                         <a class="nav-link" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/signIn">Log In </a>
+                        <a class="nav-link" href="/">Sign Out</a>
                     </li>
                 </ul>
             </div>
