@@ -1,0 +1,9 @@
+{
+  "timeStamp": 132240,
+  "cameraID": 5,
+  "searchTags": ["red","white","jeans","animal","dog"],
+  "numIndividuals": {
+    "human": 1,
+    "animal": 0,
+    },
+  }

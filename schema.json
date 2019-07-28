@@ -4,10 +4,6 @@
     "description": "A clip in the security footage",
     "type": "object",
     "properties": {
-        "clipDetail": {
-            "description": "A small condensed description of where the clip came from",
-            "type": "string"
-        },
         "timeStamp": {
             "description": "The time stamp at which the clip is in",
             "type": "number"
@@ -20,6 +16,20 @@
             "description": "Data on the clip coming from the Google Vision API",
             "type": "object"
         },
+        "numIndividuals": {
+          "description": "Details on the number of individuals identified in the clip",
+          "type": "object"
+          {
+            "human":{
+              "description": "The number of humans identified in the clip",
+              "type": "number"
+            },
+            "animal":{
+              "description": "The number of humans identified in the clip",
+              "type": "number"
+            }
+          }
+        },
         "searchTags": {
             "description": "Tags to do the search by",
             "type": "array",
@@ -30,5 +40,5 @@
             "uniqueItems": true
         }
     },
-    "required": ["clipDetail", "timeStamp", "cameraID"]
+    "required": ["timeStamp", "cameraID"]
   }
